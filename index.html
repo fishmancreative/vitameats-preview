@@ -393,6 +393,84 @@ body{padding-bottom:72px}
 <p style="margin-top:28px;color:var(--muted);font-size:16px">Together they balance each other: spleen brings the iron, liver brings the B vitamins and copper, and a 50/50 split keeps vitamin A sensible. [Wireframe: swap ratings for per-serve lab values.]</p>
 </div>
 </section>
+<section id="offer" aria-labelledby="offer-title">
+<div class="wrap">
+<div class="offer-head">
+<div>
+<h2 id="offer-title">Choose your supply.</h2>
+<p class="lede" style="margin:0">Most women notice a difference over 2-3 months. That's why most choose 3 jars.</p>
+</div>
+<div class="toggle" role="group" aria-label="Purchase type">
+<button type="button" data-mode="sub" aria-pressed="true">Subscribe - save 20%</button>
+<button type="button" data-mode="once" aria-pressed="false">One-time</button>
+</div>
+</div>
+<form onsubmit="event.preventDefault()">
+<fieldset class="packs">
+<legend style="position:absolute;left:-9999px">Number of jars</legend>
+<label class="pack">
+<input type="radio" name="pack" value="1">
+<div class="flag none">-</div>
+<figure class="ph" data-label="IMAGE: pack-1.jpg - One jar. 4:3."><img src="images/product-jar.webp" alt="One jar of VitaMeats Beef Spleen capsules" onerror="this.classList.add('missing')"></figure>
+<div class="inner">
+<h3>1 jar</h3>
+<div class="supply">30-day supply - 120 capsules</div>
+<div class="per" data-sub="$38" data-once="$48">$38 <small>/ jar</small></div>
+<div class="total" data-sub="<s>$48</s>$38 total" data-once="$48 total"><s>$48</s>$38 total</div>
+<ul><li>Try it out</li></ul>
+</div>
+</label>
+<label class="pack popular">
+<input type="radio" name="pack" value="3" checked>
+<div class="flag">Most popular</div>
+<figure class="ph" data-label="IMAGE: pack-3.jpg - Three jars. 4:3."><img src="images/product-jar.webp" alt="VitaMeats Beef Spleen jar (3-jar pack shot to come)" onerror="this.classList.add('missing')"></figure>
+<div class="inner">
+<h3>3 jars</h3>
+<div class="supply">90-day supply - the time it takes to notice</div>
+<div class="per" data-sub="$35" data-once="$44">$35 <small>/ jar</small></div>
+<div class="total" data-sub="<s>$144</s>$105 total" data-once="<s>$144</s>$132 total"><s>$144</s>$105 total</div>
+<ul><li>Free shipping</li><li>Free broth booster sample</li></ul>
+</div>
+</label>
+<label class="pack">
+<input type="radio" name="pack" value="6">
+<div class="flag quiet">Best value</div>
+<figure class="ph" data-label="IMAGE: pack-6.jpg - Six jars. 4:3."><img src="images/product-jar.webp" alt="VitaMeats Beef Spleen jar (6-jar pack shot to come)" onerror="this.classList.add('missing')"></figure>
+<div class="inner">
+<h3>6 jars</h3>
+<div class="supply">180-day supply</div>
+<div class="per" data-sub="$32" data-once="$40">$32 <small>/ jar</small></div>
+<div class="total" data-sub="<s>$288</s>$192 total" data-once="<s>$288</s>$240 total"><s>$288</s>$192 total</div>
+<ul><li>Free shipping</li><li>Free broth booster box</li><li>Lowest price per jar</li></ul>
+</div>
+</label>
+</fieldset>
+<div class="checkout">
+<div>
+<label class="bump">
+<input type="checkbox">
+<div><b>Add Broth Booster sachets - $19 (save $10)</b><span>30 sachets of the same blend to stir into soup or bone broth. Only offered here.</span></div>
+</label>
+<a class="btn wide" href="#offer">Add to cart</a>
+<p class="scarcity">Each animal has just one spleen, so every batch is small. When a batch sells out, the next one follows the farm's season.</p>
+<div class="guarantee">
+<div class="seal">90-DAY<br>GUARANTEE</div>
+<p><b>Try it for 90 days.</b> If you don't feel it was worth it, email us and we'll refund every jar - even the empty ones. No forms, no hoops.</p>
+</div>
+</div>
+<div class="sub-explain">
+<h3>How the subscription works</h3>
+<ul>
+<li>Your jars arrive on the schedule you pick.</li>
+<li>We email you 3 days before every order.</li>
+<li>Skip, pause, change or cancel anytime in one click.</li>
+<li>No sign-up fees, no minimum term.</li>
+</ul>
+</div>
+</div>
+</form>
+</div>
+</section>
 <section class="farm" id="farm" aria-labelledby="farm-title">
 <div class="wrap">
 <div class="farm-grid">
@@ -477,84 +555,6 @@ body{padding-bottom:72px}
 <li>VitaMeats is both, 50/50, from one regenerative NZ farm.</li>
 </ol>
 <a class="btn" href="#offer">Choose your supply</a>
-</div>
-</section>
-<section id="offer" aria-labelledby="offer-title">
-<div class="wrap">
-<div class="offer-head">
-<div>
-<h2 id="offer-title">Choose your supply.</h2>
-<p class="lede" style="margin:0">Most women notice a difference over 2-3 months. That's why most choose 3 jars.</p>
-</div>
-<div class="toggle" role="group" aria-label="Purchase type">
-<button type="button" data-mode="sub" aria-pressed="true">Subscribe - save 20%</button>
-<button type="button" data-mode="once" aria-pressed="false">One-time</button>
-</div>
-</div>
-<form onsubmit="event.preventDefault()">
-<fieldset class="packs">
-<legend style="position:absolute;left:-9999px">Number of jars</legend>
-<label class="pack">
-<input type="radio" name="pack" value="1">
-<div class="flag none">-</div>
-<figure class="ph" data-label="IMAGE: pack-1.jpg - One jar. 4:3."><img src="images/product-jar.webp" alt="One jar of VitaMeats Beef Spleen capsules" onerror="this.classList.add('missing')"></figure>
-<div class="inner">
-<h3>1 jar</h3>
-<div class="supply">30-day supply - 120 capsules</div>
-<div class="per" data-sub="$38" data-once="$48">$38 <small>/ jar</small></div>
-<div class="total" data-sub="<s>$48</s>$38 total" data-once="$48 total"><s>$48</s>$38 total</div>
-<ul><li>Try it out</li></ul>
-</div>
-</label>
-<label class="pack popular">
-<input type="radio" name="pack" value="3" checked>
-<div class="flag">Most popular</div>
-<figure class="ph" data-label="IMAGE: pack-3.jpg - Three jars. 4:3."><img src="images/product-jar.webp" alt="VitaMeats Beef Spleen jar (3-jar pack shot to come)" onerror="this.classList.add('missing')"></figure>
-<div class="inner">
-<h3>3 jars</h3>
-<div class="supply">90-day supply - the time it takes to notice</div>
-<div class="per" data-sub="$35" data-once="$44">$35 <small>/ jar</small></div>
-<div class="total" data-sub="<s>$144</s>$105 total" data-once="<s>$144</s>$132 total"><s>$144</s>$105 total</div>
-<ul><li>Free shipping</li><li>Free broth booster sample</li></ul>
-</div>
-</label>
-<label class="pack">
-<input type="radio" name="pack" value="6">
-<div class="flag quiet">Best value</div>
-<figure class="ph" data-label="IMAGE: pack-6.jpg - Six jars. 4:3."><img src="images/product-jar.webp" alt="VitaMeats Beef Spleen jar (6-jar pack shot to come)" onerror="this.classList.add('missing')"></figure>
-<div class="inner">
-<h3>6 jars</h3>
-<div class="supply">180-day supply</div>
-<div class="per" data-sub="$32" data-once="$40">$32 <small>/ jar</small></div>
-<div class="total" data-sub="<s>$288</s>$192 total" data-once="<s>$288</s>$240 total"><s>$288</s>$192 total</div>
-<ul><li>Free shipping</li><li>Free broth booster box</li><li>Lowest price per jar</li></ul>
-</div>
-</label>
-</fieldset>
-<div class="checkout">
-<div>
-<label class="bump">
-<input type="checkbox">
-<div><b>Add Broth Booster sachets - $19 (save $10)</b><span>30 sachets of the same blend to stir into soup or bone broth. Only offered here.</span></div>
-</label>
-<a class="btn wide" href="#offer">Add to cart</a>
-<p class="scarcity">Each animal has just one spleen, so every batch is small. When a batch sells out, the next one follows the farm's season.</p>
-<div class="guarantee">
-<div class="seal">90-DAY<br>GUARANTEE</div>
-<p><b>Try it for 90 days.</b> If you don't feel it was worth it, email us and we'll refund every jar - even the empty ones. No forms, no hoops.</p>
-</div>
-</div>
-<div class="sub-explain">
-<h3>How the subscription works</h3>
-<ul>
-<li>Your jars arrive on the schedule you pick.</li>
-<li>We email you 3 days before every order.</li>
-<li>Skip, pause, change or cancel anytime in one click.</li>
-<li>No sign-up fees, no minimum term.</li>
-</ul>
-</div>
-</div>
-</form>
 </div>
 </section>
 <section class="how" aria-labelledby="how-title">
