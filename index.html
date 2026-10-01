@@ -36,6 +36,7 @@ a{color:inherit}
 a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,label:focus-within{outline:3px solid var(--heme);outline-offset:3px}
 h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0 0 .5em;letter-spacing:-.01em}
 h1{font-size:clamp(40px,6.4vw,84px)}
+.hero h1{font-size:clamp(36px,5vw,66px)}
 h2{font-size:clamp(32px,4.6vw,56px)}
 h3{font-size:clamp(21px,2vw,26px)}
 p{margin:0 0 1em;max-width:62ch}
@@ -167,7 +168,8 @@ thead th.us{color:var(--heme)}
 .pack .flag{background:var(--heme);color:var(--white);font-size:13px;font-weight:700;text-align:center;padding:7px}
 .pack .flag.quiet{background:var(--ink)}
 .pack .flag.none{visibility:hidden}
-.pack .ph{aspect-ratio:4/3;min-height:0;border-radius:0;margin-bottom:18px}
+.pack .ph{aspect-ratio:1/1;min-height:0;border-radius:0;margin-bottom:18px}
+.pack .ph img{object-position:center 25%}
 .pack .inner{padding:0 22px}
 .pack h3{font-size:24px;margin-bottom:4px}
 .pack .supply{font-size:14px;color:var(--muted);margin-bottom:14px}
@@ -495,7 +497,7 @@ body{padding-bottom:72px}
 <label class="pack">
 <input type="radio" name="pack" value="1">
 <div class="flag none">-</div>
-<figure class="ph" data-label="IMAGE: pack-1.jpg - One jar. 4:3."><img src="images/pack-1.jpg" alt="" onerror="this.classList.add('missing')"></figure>
+<figure class="ph" data-label="IMAGE: pack-1.jpg - One jar. 4:3."><img src="images/product-jar.webp" alt="One jar of VitaMeats Beef Spleen capsules" onerror="this.classList.add('missing')"></figure>
 <div class="inner">
 <h3>1 jar</h3>
 <div class="supply">30-day supply - 120 capsules</div>
@@ -507,7 +509,7 @@ body{padding-bottom:72px}
 <label class="pack popular">
 <input type="radio" name="pack" value="3" checked>
 <div class="flag">Most popular</div>
-<figure class="ph" data-label="IMAGE: pack-3.jpg - Three jars. 4:3."><img src="images/pack-3.jpg" alt="" onerror="this.classList.add('missing')"></figure>
+<figure class="ph" data-label="IMAGE: pack-3.jpg - Three jars. 4:3."><img src="images/product-jar.webp" alt="VitaMeats Beef Spleen jar (3-jar pack shot to come)" onerror="this.classList.add('missing')"></figure>
 <div class="inner">
 <h3>3 jars</h3>
 <div class="supply">90-day supply - the time it takes to notice</div>
@@ -519,7 +521,7 @@ body{padding-bottom:72px}
 <label class="pack">
 <input type="radio" name="pack" value="6">
 <div class="flag quiet">Best value</div>
-<figure class="ph" data-label="IMAGE: pack-6.jpg - Six jars. 4:3."><img src="images/pack-6.jpg" alt="" onerror="this.classList.add('missing')"></figure>
+<figure class="ph" data-label="IMAGE: pack-6.jpg - Six jars. 4:3."><img src="images/product-jar.webp" alt="VitaMeats Beef Spleen jar (6-jar pack shot to come)" onerror="this.classList.add('missing')"></figure>
 <div class="inner">
 <h3>6 jars</h3>
 <div class="supply">180-day supply</div>
